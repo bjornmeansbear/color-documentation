@@ -1,6 +1,6 @@
 {
-  "name": "colorDocumentation",
-  "version": "0.0.1",
+  "name": "colorDocsPlus",
+  "version": "0.0.2",
   "scripts": {
     "start": "node build.js"
   },
@@ -8,6 +8,7 @@
     "color": "^0.11.3",
     "colorable": "^1.0.5",
     "lodash": "^4.15.0",
-    "postcss": "^5.1.2"
+    "postcss": "^5.1.2",
+    "grade-js": "^1.0.7"
   }
 }
