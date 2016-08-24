@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!-- template.html -->
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Delany And Long Color Palette Docs</title>
+  <link rel="stylesheet" href="https://npmcdn.com/basscss@8.0.2/css/basscss.min.css">
+  <link rel="stylesheet" href="basscss.css">
+  <!-- <link rel="stylesheet" href="dl.css"> -->
+</head>
+<body class="px3">
+  <header class="py3">
+    <h1>Delany And Long Color Palette Docs</h1>
+  </header>
+  <ul class="list-reset flex flex-wrap">
+    <% colors.map(renderColor) %>
+  </ul>
+  <% function renderColor(color) { %>
+    <li class="col-6 sm-col-4 md-col-3 lg-col-2">
+      <div class="p3"
+        style="background-color:<%= color %>">
+      </div>
+      <p
+        class="my1 p1"
+        style="font-family:monospace;">
+        <%= color %>
+      </p>
+    </li>
+  <% } %>
+
+  <h2>Highly Legible Color Combinations</h2>
+  <ul class="list-reset flex flex-wrap">
+    <% combos.map(renderCombo) %>
+  </ul>
+  <% function renderCombo(combo) { %>
+    <li class="py2 col-6 sm-col-4 md-col-3 lg-col-2"
+      style="color:<%= combo.pairing %>;background-color:<%= combo.hex %>">
+      <div class="h1 bold px2">
+        Aa
+      </div>
+      <ul class="list-reset h5 px2">
+        <li>Type: <%= combo.pairing %></li>
+        <li>Background: <%= combo.hex %></li>
+        <li><%= combo.contrast.toFixed(2) %></li>
+      </ul>
+    </li>
+  <% } %>
+</body>
+</html>

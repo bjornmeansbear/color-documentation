@@ -1,0 +1,13 @@
+{
+  "name": "colorDocumentation",
+  "version": "0.0.1",
+  "scripts": {
+    "start": "node build.js"
+  },
+  "devDependencies": {
+    "color": "^0.11.3",
+    "colorable": "^1.0.5",
+    "lodash": "^4.15.0",
+    "postcss": "^5.1.2"
+  }
+}
