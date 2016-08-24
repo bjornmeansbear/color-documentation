@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="basscss.css">
   <!-- <link rel="stylesheet" href="dl.css"> -->
 </head>
+
 <body class="px3">
   <header class="py3">
     <h1>Delany And Long Color Palette Docs</h1>
@@ -1193,5 +1194,25 @@
   
   </ul>
   
+  <!--the gradients will be applied to these outer divs, as background-images-->
+  <div class="gradient-wrap" style="height: 300px;">
+    <img class="hide" src="/img/birger.jpg" alt="" />
+  </div>
+  <div class="gradient-wrap" style="height: 300px;">
+    <img class="hide" src="/img/cafeman.png" alt="" />
+  </div>
+
+  <script src="node_modules/grade-js/docs/dist/grade.js"></script>
+  <script type="text/javascript">
+    window.addEventListener('load', function(){
+        /*
+            A NodeList of all your image containers (Or a single Node).
+            The library will locate an <img /> within each
+            container to create the gradient from.
+         */
+        Grade(document.querySelectorAll('.gradient-wrap'))
+    })
+    </script>
+
 </body>
 </html>
