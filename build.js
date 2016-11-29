@@ -9,7 +9,7 @@ var fs = require('fs')
 var parseColors = require('./lib/parse-colors')
 var parseCombos = require('./lib/parse-combos')
 
-  var css = fs.readFileSync('dl.css', 'utf8')
+var css = fs.readFileSync('mgs2017.css', 'utf8')
 // Read the template string
 var template = fs.readFileSync('template.html', 'utf8')
 // Create a lodash template function
